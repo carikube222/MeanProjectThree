@@ -1,0 +1,28 @@
+  <br><br><br>
+  <h3>What's your name?</h3>
+  <br>
+  <form ng-submit="addPatient()">
+    <input type="text" ng-model="newPatient" required />
+    <button class="btn btn-lg btn-success" type="submit"><i class="fa fa-rocket fa-lg" aria-hidden="true"></i></button>
+  </form>
+
+  <!-- <form name="myForm" ng-submit="count = count + 1" ng-init="count=0" ng-app>
+ <div class="control-group" ng-class="{error: myForm.mobile.$invalid}">
+        <label class="control-label" for="mobile">Mobile</label>
+        <div class="controls">
+            <input type="text" name="mobile" placeholder="07XXXXXXXXX" ng-model="mobile" ng-minlength="11" pattern="07[0-9]{9}" required />
+            <span ng-show="myForm.mobile.$error.required" class="help-inline">Required</span>
+            <span ng-show="myForm.mobile.$error.minlength" class="help-inline">Mobile number should be minimum 11 character starting from 07</span>
+        </div>
+    </div>
+
+     <div class="control-group">
+        <div class="controls">
+            <input  class="btn" type="submit" value ="submit" />
+        </div>
+
+         count: {{count}}<br />
+
+<tt>myForm.$invalid = {{myForm.$invalid}}</tt><br/>
+    </div>
+</form> -->

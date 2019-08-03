@@ -1,0 +1,21 @@
+{
+  "name": "project_two",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Caroline Tompkins <caroline.jenna.koah@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-route": "^1.6.3"
+  }
+}

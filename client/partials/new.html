@@ -1,0 +1,15 @@
+<h1>New Appointment</h1>
+<br>
+<div ng-repeat='message in hasErrors'>
+  <p style='color:red;' ng-bind='message'></p>
+</div>
+<form ng-submit="create()">
+	<h4>Date</h4>
+	<input type='date' ng-model='newAppointment.date' class='form-control' required /><br>
+	<h4>Time</h4>
+	<input type='time' ng-model='newAppointment.time' class='form-control' required /><br>
+	<input type='text' ng-model='newAppointment.concern' class='form-control' placeholder="What's your reason for Appointment, enter your text here (10 characters minimum)" required />
+	<button type = 'submit' class='btn btn-success pull-right'>Add Appointment</button>
+</form>
+
+	<a href="#!/appointments" class='btn btn-default pull-right'>Cancel</a>

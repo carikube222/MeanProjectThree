@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+  <meta charset="utf-8">
+  <title>MEAN PROJECT</title>
+<!-- ************************ BOOTSTRAP ************************************ -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- ************************ FONTAWESOME & jQuery ************************* -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- ************************** Angular & CSS ****************************** -->
+  <link rel="stylesheet" href="assets/pretty.css">
+  <script src="angular/angular.js"></script>
+  <script src="angular-route/angular-route.js"></script>
+  <script src="assets/app.js"></script>
+<!-- ************* EDIT PLEASE Add assets controllers ********************** -->
+  <script src="assets/factories/appointmentsFactory.js"></script>
+  <script src="assets/controllers/loginController.js"></script>
+  <script src="assets/controllers/logoutController.js"></script>
+  <script src="assets/controllers/mainController.js"></script>
+  <script src="assets/controllers/newController.js"></script>
+<!-- *********************************************************************** -->
+</head>
+<body ng-app="app">
+  <div class="container">
+<!-- *********************************************************************** -->
+    <!-- <br>
+      <a href="#!/"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a> |
+      Green Button:<a class="btn btn-lg btn-success" href="#"><i class="fa fa-rocket fa-lg" aria-hidden="true"></i></a>
+      Rocekt: <a href="#!/new"><i class="fa fa-rocket fa-lg" aria-hidden="true"></i></a>
+      Delete: <a href="#!/delete"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+      Red Button<a class="btn btn-danger" href="#"><i class="fa fa-trash-o fa-lg"></i> Delete</a>
+      Add: <a href ="#!/add"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></a>
+      Default: <button type="button" class="btn btn-default" >Default</button>
+    <hr>
+    <h4>Form control: checkbox</h4>
+      <p>The form below contains three checkboxes. The last option is disabled:</p>
+      <form>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Option 1</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Option 2</label>
+        </div>
+        <div class="checkbox disabled">
+          <label><input type="checkbox" value="" disabled>Option 3</label>
+        </div>
+      </form>
+    <hr>
+    <h2>Striped Rows</h2>
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+    </table> -->
+<!-- ******************* partials/.html goes here ************************** -->
+    <div ng-view= "" style='text-align:center'></div>
+<!-- *********************************************************************** -->
+  </div>
+</body>
+</html>

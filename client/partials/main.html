@@ -1,0 +1,28 @@
+
+<h1>MAIN PAGE</h1>
+<a href='/#!/logout'>Bye <i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
+<form><a href='#!/appointments/new' class='btn btn-success pull-right'>Add New Appointment</a></form>
+<h2>Striped Rows</h2>
+<p style='color:red;' ng-bind='hasErrors'></p>
+<p class='pull-right'>Search:  <input type='text' ng-model='filter_date' placeholder='Search...' /></p>
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th>Patient Name</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Concern</th>
+    <th>Action</th>
+  </tr>
+</thead>
+<tbody>
+  <tr ng-repeat='appointment in appointments | orderBy: "-createdAt" | filter: filter_date' ng-if='upcoming(appointment)'>
+    <td ng-bind='appointment.date | date: "longDate"'></td>
+		<td ng-bind='appointment.time | date: "shortTime"'></td>
+		<td ng-bind='appointment.name'></td>
+    <td ng-bind='appointment.concern'></td>
+		<td>
+      <a class='btn btn-default' ng-if='appointment.name == currentPatient' ng-click='delete(appointment)'>Cancel</a>
+		</td>
+</tbody>
+</table>
